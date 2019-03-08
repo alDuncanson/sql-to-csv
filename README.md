@@ -1,4 +1,12 @@
-# MySQL dump to CSV
+# Sql dump to CSV
+
+## Credit and Shoutout
+Shoutout to jamesmishra for writing the original python script!
+
+We modified it to fit our needs, allowing for table specifications.
+
+Thank you jamesmishra!
+
 ## Background
 A quickly-hacked-together Python script to turn mysqldump files to CSV files. Optimized for Wikipedia database dumps.
 
@@ -25,8 +33,3 @@ is turned into the following CSV:
     2,0,August,0,0,0,0.123830928525,20140312221818,20140312221822,4360163,11466,0
 
 It's not too difficult to see what is going on, but you can certainly look at the source code to see exactly how the transformation is made.
-
-## Todo
- * A rigorous series of unit tests, proving that this works on a diverse set of MySQL dump files without any side effects
- * Some more documentation
- * A solution to a bug where one column is a string ending in `)` and the next column is a string starting in `(`. The current program logic suggests that the parentheses would be stripped.
